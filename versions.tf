@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    random = {
+    kubernetes = {
       source  = "hashicorp/kubernetes"
       version = ">= 2.0"
     }
