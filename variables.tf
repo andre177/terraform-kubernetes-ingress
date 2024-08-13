@@ -48,7 +48,7 @@ variable "tls" {
 variable "rules" {
   description = "Forwarding rules for backend services"
   type = list(object({
-    host = string
+    host = optional(string)
     http = object({
       paths = list(object({
         path      = string

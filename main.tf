@@ -1,4 +1,5 @@
 resource "kubernetes_ingress_v1" "this" {
+  wait_for_load_balancer = var.ingress_class_name == "alb" ? true : false
   metadata {
     name        = var.name
     namespace   = var.namespace
