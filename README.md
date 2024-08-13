@@ -6,7 +6,7 @@ Terraform module which creates an ingress in a Kubernetes cluster. It is useful 
 ### Creating an ingress
 ```hcl
 module "my_ingress" {
-  source  = "andre177/kubernetes/ingress"
+  source  = "andre177/ingress/kubernetes"
   version = "0.0.1"
 
   name      = "my-ingress"
